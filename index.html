@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dinosaur List</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="species">Species: </label>
+          <input type="text" id="species" required>
+        </div>
+
+        <div class="form-item">
+          <label for="period">Period: </label>
+          <select id="period">
+            <option value="" disabled selected></option>
+            <option value="Triassic">Triassic</option>
+            <option value="Jurassic">Jurassic</option>
+            <option value="Cretaceous">Cretaceous</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="diet">Diet: </label>
+          <select id="diet">
+            <option value="" disabled selected></option>
+            <option value="Carnivore">Carnivore</option>
+            <option value="Herbivore">Herbivore</option>
+            <option value="Omnivore">Omnivore</option>
+          </select>
+        </div>
+
+      </div>
+      <input class="save btn" type="submit" value="save"/>
+    </form>
+
+    <h1>Dinosaur List</h1>
+    <div id="dinosaur-list"></div>
+  </body>
+</html>

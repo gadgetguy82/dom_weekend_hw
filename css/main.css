@@ -1,0 +1,115 @@
+body {
+  font-size: 20px;
+  font-family: Palatino;
+  background-color: #AFEEEE;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label {
+  display: inline-block;
+  text-align: center;
+}
+
+input {
+  display: inline-block;
+  background: none;
+  margin-right: 10px;
+  color: #000000;
+  border-color: #FFFF00;
+  font-size: 20px;
+}
+
+select {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #008080;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  animation: slide-up 0.5s ease;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+  margin: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.form-item {
+  flex-direction: column;
+  font-size: 20;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.author {
+  font-size: 24px;
+}
+
+.category {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  background: none;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+}
+
+.save:hover {background-color: #3E8E41}
+
+.save:active {
+  background-color: #3E8E41;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+.delete:hover {background-color: #FF0000}
+
+.delete:active {
+  background-color: #FF0000;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+.delete {
+  margin-right: 80%;
+  background-color: #FF6347;
+}
+
+.save {
+  margin-top: 20px;
+  background-color: #90EE90;
+}
