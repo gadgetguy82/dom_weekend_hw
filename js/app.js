@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const species = evt.target.species.value;
     const period = evt.target.period.value;
     const diet = evt.target.diet.value;
+    const origin = evt.target.origin.value;
 
     if (document.querySelectorAll('ul').length === 0) {
       const deleteButton = document.createElement("button");
@@ -26,19 +27,20 @@ document.addEventListener("DOMContentLoaded", () => {
       dinosaurList.appendChild(deleteButton);
     }
 
+    let checkedValue = null;
+    const inputElements = document.querySelectorAll("#origin");
+    for(let i = 0; inputElements[i]; i++){
+      if(inputElements[i].checked){
+        checkedValue = inputElements[i].value;
+        break;
+      }
+    }
+
     const newList = document.createElement("ul");
-    let newListItem = document.createElement("li");
-    newListItem.textContent = `Species: ${species}`;
-    newListItem.classList.add("species");
-    newList.appendChild(newListItem);
-    newListItem = document.createElement("li");
-    newListItem.textContent = `Period: ${period}`;
-    newListItem.classList.add("period");
-    newList.appendChild(newListItem);
-    newListItem = document.createElement("li");
-    newListItem.textContent = `Diet: ${diet}`;
-    newListItem.classList.add("diet");
-    newList.appendChild(newListItem);
+    addListItem(`Species: ${species}`, "species", newList);
+    addListItem(`Period: ${period}`, "period", newList);
+    addListItem(`Diet: ${diet}`, "diet", newList);
+    addListItem(`Place of origin: ${origin}`, "origin", newList);
     dinosaurList.appendChild(newList);
 
     form.reset();
@@ -47,3 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#new-item-form");
   form.addEventListener("submit", handleFormSubmit);
 })
+
+const addListItem = (text, htmlClass, elementAppendedOn) => {
+  const newListItem = document.createElement("li");
+  newListItem.textContent = text;
+  newListItem.classList.add(htmlClass);
+  elementAppendedOn.appendChild(newListItem);
+}
