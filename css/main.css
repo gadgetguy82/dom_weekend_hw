@@ -61,12 +61,8 @@ li {
   margin-right: 10px;
 }
 
-.radio {
-  flex-direction: row;
-}
-
 .diet {
-  width: 120px;
+  flex-direction: column;
 }
 
 .origin {
@@ -95,6 +91,18 @@ li {
 
 .save:active {
   background-color: #3E8E41;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+
+.reset {
+  background-color: #FFBF00;
+}
+
+.reset:hover {background-color: #594D27}
+
+.reset:active {
+  background-color: #594D27;
   box-shadow: 0 5px #666666;
   transform: translateY(4px);
 }
