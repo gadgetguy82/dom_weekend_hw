@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const seeds = [
+    ["Deinonychus", "Cretaceous", "Carnivore", "North America", "115 million years ago", "108 million years ago"],
     ["Dilophosaurus", "Jurassic", "Carnivore", "North America", "193 million years ago", "193 million years ago"],
-    ["Giganotosaurus", "Cretaceous", "Carnivore", "South America", "98 million years ago", "97 million years ago"]
+    ["Giganotosaurus", "Cretaceous", "Carnivore", "South America", "98 million years ago", "97 million years ago"],
+    ["Brachiosaurus", "Jurassic", "Herbivore", "North America", "154 million years ago", "153 million years ago"],
+    ["Parasaurolophus", "Cretaceous", "Herbivore", "Asia, North America", "76 million years ago", "73 million years ago"],
+    ["Pachycephalosaurus", "Cretaceous", "Herbivore", "North America", "76 million years ago", "73 million years ago"]
   ];
 
   const facts = ["species", "period", "diet", "places of origin", "existed from", "existed to"];

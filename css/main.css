@@ -35,6 +35,10 @@ ul {
   animation: slide-up 0.5s ease;
 }
 
+h1 {
+  text-align: center;
+}
+
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -54,6 +58,17 @@ ul {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
@@ -110,6 +125,10 @@ li {
   font-family: 'Bangers', cursive;
   text-align: center;
   animation: fade-in 0.5s ease;
+}
+
+.seed {
+  background-color: #DAA520;
 }
 
 .save {
