@@ -1,6 +1,6 @@
 body {
   font-size: 20px;
-  font-family: Palatino;
+  font-family: 'Luckiest Guy', cursive;
   background-color: #FED8B1;
 }
 
@@ -14,7 +14,6 @@ label {
 }
 
 input {
-  background: none;
   color: #000000;
   border-color: #FFFF00;
   font-size: 20px;
@@ -26,6 +25,7 @@ select {
 
 ul {
   list-style-type: none;
+  cursor: pointer;
   margin-top: 20px;
   margin-right: 20px;
   background-color: #FFA500;
@@ -68,6 +68,7 @@ ul {
 
 li {
   margin: 10px;
+  font-family: 'Chewy', cursive;
 }
 
 .form-wrapper {
@@ -77,8 +78,12 @@ li {
 .form-item {
   flex-direction: column;
   font-size: 20;
+  border-radius: 10px;
+  background-color: #FF8C00;
+  box-shadow: 5px 5px;
   text-align: center;
-  margin-right: 10px;
+  margin: 10px;
+  padding: 10px;
   animation: slide-down 0.5s ease;
 }
 
@@ -86,26 +91,28 @@ li {
   flex-direction: column;
 }
 
-.origin {
+.placesoforigin {
   flex-direction: column;
 }
 
 .btn {
   display: inline-block;
+  cursor: pointer;
   height: 40px;
-  width: 150px;
+  width: 100px;
+  margin: 10px;
   background: none;
   border: none;
   border-radius: 25px;
   box-shadow: 0 5px;
   color: #000000;
   font-size: 20px;
+  font-family: 'Bangers', cursive;
   text-align: center;
   animation: fade-in 0.5s ease;
 }
 
 .save {
-  margin-top: 20px;
   background-color: #90EE90;
 }
 
@@ -140,4 +147,72 @@ li {
   background-color: #FF0000;
   box-shadow: 0 5px #666666;
   transform: translateY(4px);
+}
+
+.FFA07A {
+  background-color: #FFA07A;
+}
+
+.F08080 {
+  background-color: #F08080;
+}
+
+.FF7F50 {
+  background-color: #FF7F50;
+}
+
+.FFD700 {
+  background-color: #FFD700;
+}
+
+.FFEFD5 {
+  background-color: #FFEFD5;
+}
+
+.FFFF00 {
+  background-color: #FFFF00;
+}
+
+.00FF7F {
+  background-color: #00FF7F;
+}
+
+.AFEEEE {
+  background-color: #AFEEEE;
+}
+
+.B0E0E6 {
+  background-color: #B0E0E6;
+}
+
+.87CEEB {
+  background-color: #87CEEB;
+}
+
+.E6E6FA {
+  background-color: #E6E6FA;
+}
+
+.FFFFF0 {
+  background-color: #FFFFF0;
+}
+
+.F5DEB3 {
+  background-color: #F5DEB3;
+}
+
+.D2B48C {
+  background-color: #D2B48C;
+}
+
+.FFDD52 {
+  background-color: #FFDD52;
+}
+
+.C9C37D {
+  background-color: #C9C37D;
+}
+
+.FFA500 {
+  background-color: #FFA500;
 }
